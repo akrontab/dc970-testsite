@@ -1,0 +1,50 @@
+@use 'variables' as *;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $font-sans;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $color-text;
+  background: $color-bg;
+}
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+code {
+  font-family: $font-mono;
+  font-size: 0.875em;
+  background: $color-bg-alt;
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+}
+
+pre {
+  font-family: $font-mono;
+  font-size: 0.875em;
+  background: $color-bg-alt;
+  padding: $spacing-unit;
+  overflow-x: auto;
+  border-radius: 4px;
+
+  code {
+    background: none;
+    padding: 0;
+  }
+}

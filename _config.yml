@@ -1,0 +1,24 @@
+title: DC970
+tagline: Denver Security Community
+description: A community for security professionals and enthusiasts in the Denver area, meeting monthly to share knowledge, tools, and research.
+baseurl: ""
+url: ""
+
+author:
+  name: DC970
+
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+permalink: /posts/:title/
+
+exclude:
+  - Dockerfile
+  - docker-compose.yml
+  - Gemfile
+  - Gemfile.lock
+  - README.md
