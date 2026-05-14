@@ -14,4 +14,4 @@ All skill levels are welcome. There are no dues or membership requirements — j
 
 ## Contact
 
-*Add contact info, Discord invite, mailing list, etc. here.*
+Join us on [Discord](https://discord.gg/qxxxUhYbT5) to connect between meetings, share links, and get notified when new meetups are announced.
