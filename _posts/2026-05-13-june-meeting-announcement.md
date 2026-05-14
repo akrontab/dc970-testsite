@@ -10,7 +10,7 @@ Our June meetup is confirmed. Join us for a hands-on evening focused on red team
 
 | | |
 |---|---|
-| **Date** | Wednesday, June 11, 2026 |
+| **Date** | Thursday, June 18, 2026 |
 | **Time** | 6:30 PM — 9:00 PM MT |
 | **Location** | TBD — check back or join the mailing list for updates |
 
