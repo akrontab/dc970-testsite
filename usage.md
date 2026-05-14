@@ -18,14 +18,14 @@ Your content here in Markdown.
 
 ### Categories
 
-| Category       | Use for |
-|----------------|---------|
-| `announcement` | Upcoming meeting details, venue, agenda |
-| `news`         | Security news roundups, CVE highlights, research links |
-| `meeting`      | Recaps and notes from a past meeting |
-| `ctf`          | CTF writeups and challenge walkthroughs |
+| Category       | Badge color | Use for |
+|----------------|-------------|---------|
+| `announcement` | Cyan        | Upcoming meeting details, venue, agenda |
+| `news`         | Green       | Security news roundups, CVE highlights, research links |
+| `meeting`      | Purple      | Recaps and notes from a past meeting |
+| `ctf`          | Yellow      | CTF writeups and challenge walkthroughs |
 
-Each category renders as a colored badge on the home page and post header.
+Each category renders as a neon-outlined badge on the home page and post header.
 
 ### Content formatting
 
