@@ -1,6 +1,6 @@
 @use 'variables' as *;
 
-// Glitch fires once per cycle in the 92–99% window (~5s cycle = ~350ms glitch burst)
+// Glitch fires once per cycle in the 92–99% window (~2s cycle = ~140ms glitch burst)
 @keyframes glitch-clip-1 {
   0%, 91%, 100% { clip-path: inset(0 100% 0 0); transform: none; }
   92%  { clip-path: inset(10% 0 75% 0); transform: translateX(-4px); }
@@ -42,12 +42,12 @@
 
   &::before {
     color: $color-glitch-r;
-    animation: glitch-clip-1 5s infinite;
+    animation: glitch-clip-1 2s infinite;
   }
 
   &::after {
     color: $color-glitch-b;
-    animation: glitch-clip-2 5s infinite;
+    animation: glitch-clip-2 2s infinite;
     animation-delay: 0.08s;
   }
 }
