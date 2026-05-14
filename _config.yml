@@ -16,6 +16,13 @@ plugins:
 
 permalink: /posts/:title/
 
+defaults:
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: post
+
 exclude:
   - Dockerfile
   - docker-compose.yml

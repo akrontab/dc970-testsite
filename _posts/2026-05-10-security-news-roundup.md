@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Security News Roundup — May 2026"
 date: 2026-05-10
 category: news

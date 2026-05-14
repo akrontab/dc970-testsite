@@ -51,16 +51,17 @@ To add a new category, add an entry to `$badges` — the `.category-badge--<slug
 
 ### Adding content
 
-New posts go in `_posts/YYYY-MM-DD-slug.md` with this front matter:
+New posts go in `_posts/YYYY-MM-DD-slug.md`. Front matter is intentionally minimal — only portable keys, no Jekyll-specific values:
 
 ```yaml
 ---
-layout: post
 title: "Title"
 date: YYYY-MM-DD
 category: announcement  # announcement | news | meeting | ctf
 ---
 ```
+
+`layout: post` is injected automatically via `defaults` in `_config.yml` and must not be added to individual post files. This keeps post files usable as-is if the site ever migrates to another SSG (Hugo, Eleventy, Astro, etc.).
 
 Posts appear on the home page feed automatically, newest first.
 
@@ -79,7 +80,9 @@ Once the GitHub Pages URL is known, set `url:` in `_config.yml` (e.g. `https://u
 
 ## Deployment
 
-Pushing to `main` triggers `.github/workflows/deploy.yml`, which:
+Pushing to `main` triggers `.github/workflows/deploy.yml` when any of these paths change: `_posts/**`, `_layouts/**`, `_includes/**`, `_sass/**`, `assets/**`, `_config.yml`, `Gemfile.lock`, or any `.md`/`.html` file. Adding a post file and merging to `main` is sufficient to trigger a deploy. `workflow_dispatch` is also available for manual runs.
+
+The workflow:
 1. Runs `actions/configure-pages` — automatically injects the correct `baseurl` for the Pages environment (handles both user pages and project pages)
 2. Builds with `bundle exec jekyll build` using the locked Gemfile versions
 3. Deploys via `actions/deploy-pages`

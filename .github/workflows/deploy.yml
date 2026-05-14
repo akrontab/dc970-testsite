@@ -3,6 +3,16 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: ["main"]
+    paths:
+      - "_posts/**"
+      - "_layouts/**"
+      - "_includes/**"
+      - "_sass/**"
+      - "assets/**"
+      - "_config.yml"
+      - "Gemfile.lock"
+      - "**.md"
+      - "**.html"
   workflow_dispatch:
 
 permissions:

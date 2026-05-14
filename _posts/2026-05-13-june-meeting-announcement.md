@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "June Meeting — Red Team Tactics & Live Demo"
 date: 2026-05-13
 category: announcement
